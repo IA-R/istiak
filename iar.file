@@ -1,0 +1,78 @@
+		PUBLISH A REPOSITORY ON TERMUX
+		_____________________________
+STEP :01
+________
+*pkg update && pkg upgrade -y
+*termux-setup-storage (*optional)
+  pkg install git nano python -y
+
+  mkdir my-website && mkdir my website
+
+  nano website.html
+
+  <!DOCTYPE html>
+<html>
+<head>
+<center><b>Test Exam Result</b></center>
+</head>
+<style type="text" align="center" color="blue"></style>
+<body>
+<table border="1" cellspacing="0" width="300">
+<tr>
+<th rowspan="2">ID</th>
+<th colspan="2" align="center">ICT Marks</th>
+</tr>
+<td>CQ</td>
+<td>MCQ</td>
+<tr>
+<tr>
+<td>A901</td>
+<td>40</td>
+<td></td>
+</tr>
+<tr>
+<td>A902</td>
+<td>36</td>
+<td>19</td>
+</tr>
+</table>
+</body>
+</html>
+//(  note: ctrl+o to save ; ctrl+x to exit )
+
+step :02
+________
+	
+	python -m http.server 8000
+	//(press ctrl+c to stop the server)
+	 git init 
+	git config --global user.name your name on github
+	git comfig --global user.email your mail on github
+	git add .
+	git commit -m ("anyting you want to you can write") 
+	git branch -M main
+	git remote add origin https://your repository http link
+ //(if you used it before or it
+	than use get git remote get-url origin https://your repository http link)
+	git push -u origin main
+step :03
+________
+	 
+	//then username : what you used in github
+	
+step :04(password)
+_________
+
+	go to github select all repositories than create repository 
+	then select username and name it exact your github account name
+	 then set it to public and click create then click on github pic
+	and go to setting>developer setting>personal access token (classic) 
+	lastly select one with (repo). if you lastly select without repo it will
+	be rejected.
+	
+	Go to repository and select the three dot menu . go to the setting of it 
+	.the select public.choose build and deployment  source, deploy from a branch
+	than main and root .
+
+	THEN your username.github.io search it .
+	It is now pubpished online tempprarily.
